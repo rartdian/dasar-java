@@ -15,7 +15,7 @@ public static void main(final String[] args) {
 	System.out.println("enter println");
 	/*eksekusi dari atas ke bawah*/
 	System.out.println("\n New Line enter");
-	/*print format**/System.out.printf("saras %d", 008);
+	/*print format**/System.out.printf("saras %d", 11);
 
 }
 }

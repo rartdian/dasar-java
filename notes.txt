@@ -7,3 +7,5 @@ System.out.println("nilai b adalah" +b); // ini adalah contoh deklarasi
 Tipe data primitif
 nilai min max fix
 Integer = bulat satuan
+=======operator aritmatika========
+

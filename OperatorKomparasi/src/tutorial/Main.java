@@ -66,7 +66,7 @@ public class Main {
 		System.out.printf("Apakah nilai a : %d >= b: %d ? %s \n", a, b, hasil);
 		
 		
-	
+
 	}
 
 }

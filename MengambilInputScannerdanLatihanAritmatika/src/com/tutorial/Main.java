@@ -1,5 +1,6 @@
 package com.tutorial;
 
+//ambil scanner dari java
 import java.util.Scanner;
 
 public class Main {
@@ -8,6 +9,7 @@ public class Main {
 		// TODO Auto-generated method stub
 		
 		Scanner userInput = new Scanner(System.in);
+		
 		System.out.println("Program menghitung luas persegi panjang");
 		
 		int panjang, luas, lebar, tinggi, volume;
@@ -15,8 +17,11 @@ public class Main {
 		System.out.print("Panjang = ");
 		panjang = userInput.nextInt();
 		System.out.print("lebar = ");
+
 		lebar = userInput.nextInt();
+		
 		luas = panjang * lebar;
+		
 		System.out.println("luas = "+ luas);
 	}
 

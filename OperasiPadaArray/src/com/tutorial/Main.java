@@ -66,10 +66,12 @@ public class Main {
 	} else{
 		System.out.println("array ini beda");
 	}
-	
+	int[] cekarraybesar1 = {1,1,1,1,1};
+	//int[] cekarraybesar2 = {1,1,1,1,1};
+	int[] cekarraybesar3 = {1,2,2,2,2};
 	
 	System.out.println("\n Mengecek mana array yag lebih besar");
-	System.out.println(Arrays.compare(arrayAngka6, arrayAngka7));
+	System.out.println(Arrays.compare(cekarraybesar1, cekarraybesar3));
 	
 	System.out.println("\ncek mana index yang berbeda");
 	System.out.println(Arrays.mismatch(arrayAngka6, arrayAngka7));
@@ -83,17 +85,18 @@ public class Main {
 	Arrays.sort(arrayAngka8);
 	cetakArray(arrayAngka8);
 	
-	//search array
+	//search array, sebelum melakukan search maka sorting dulu
 	System.out.println("\n search array");
 	
 	int angka = 3;
-	int posisi = Arrays.binarySearch(arrayAngka8, angka);
+	int posisi = Arrays.binarySearch(arrayAngka8, angka); //binarysearch harus di sorting terlebih dahulu
 	System.out.println("angka "+angka+" ada di index "+posisi);
 	
-	
-	
-	
-	
+	/*
+	 * tugas sorting kebalik
+	 * melakukan operasi antar buah array
+	 * menggabungkan dua buah array
+	 * */
 	
 	
 	

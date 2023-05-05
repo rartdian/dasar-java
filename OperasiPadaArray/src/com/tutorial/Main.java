@@ -83,7 +83,12 @@ public class Main {
 	Arrays.sort(arrayAngka8);
 	cetakArray(arrayAngka8);
 	
+	//search array
+	System.out.println("\n search array");
 	
+	int angka = 3;
+	int posisi = Arrays.binarySearch(arrayAngka8, angka);
+	System.out.println("angka "+angka+" ada di index "+posisi);
 	
 	
 	

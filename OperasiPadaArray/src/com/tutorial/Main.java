@@ -53,8 +53,19 @@ public class Main {
 	Arrays.fill(arrayAngka5, 5);
 	cetakArray(arrayAngka5);
 	
+	//komparasi Array
+	System.out.println("komparasi Array");
+	int[] arrayAngka6 = {1,2,3,4,9};
+	int[] arrayAngka7 = {1,2,3,4,5};
 	
+	System.out.println("\n membandinggkan 2 array");
+	System.out.println(Arrays.equals(arrayAngka6, arrayAngka7));
 	
+	if (Arrays.equals(arrayAngka6, arrayAngka7)) {
+		System.out.println("array ini sama");
+	} else{
+		System.out.println("array ini beda");
+	}
 	
 	
 	

@@ -40,6 +40,10 @@ public class Main {
 	
 	System.out.println("----------------------------------");
 	System.out.println("mengcopy dengan copyOfRange");
+	int[] arrayAngka4 = Arrays.copyOfRange(arrayAngka1, 2, 5);
+	cetakArray(arrayAngka1);
+	System.out.println(arrayAngka1);
+	System.out.println(arrayAngka4);
 	
 	
 	

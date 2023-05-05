@@ -46,7 +46,12 @@ public class Main {
 	System.out.println(arrayAngka4);
 	
 	
-	
+	//fill
+	System.out.println("===========================");
+	int[] arrayAngka5 = new int[10];
+	cetakArray(arrayAngka5);
+	Arrays.fill(arrayAngka5, 5);
+	cetakArray(arrayAngka5);
 	
 	
 	

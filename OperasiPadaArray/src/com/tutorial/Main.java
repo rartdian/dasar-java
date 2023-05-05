@@ -68,6 +68,21 @@ public class Main {
 	}
 	
 	
+	System.out.println("\n Mengecek mana array yag lebih besar");
+	System.out.println(Arrays.compare(arrayAngka6, arrayAngka7));
+	
+	System.out.println("\ncek mana index yang berbeda");
+	System.out.println(Arrays.mismatch(arrayAngka6, arrayAngka7));
+	
+	
+	//SOrt ARray
+	System.out.println("\n sort Array");
+	
+	int[] arrayAngka8 = {1,6,4,5,3,5,2,6};
+	cetakArray(arrayAngka8);
+	Arrays.sort(arrayAngka8);
+	cetakArray(arrayAngka8);
+	
 	
 	
 	

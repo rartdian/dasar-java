@@ -33,19 +33,26 @@ for(int i=0;i<x;i++) {
 }
 
 
-cetakArray(hasilArray, "hasil penjumlahan");
+cetakArray(hasilArray, "hasil penjumlahan\n");
 
 //menggabungkan dua buat array
-int[] hasilArray2 = new int[arrayAngka1.length + arrayAngka2.length];
-cetakArray(hasilArray2, "hasil penggabungan ke dua array");
+int[] arrayA = {3,4,5,6,7};
+int[] arrayB = {8,9,10,11,12};
 
-for(int i = 0; i < arrayAngka2.length; i++) {
-	hasilArray2[i+arrayAngka1.length] = arrayAngka2[i];
+int[] arrayAB = new int[arrayA.length+arrayB.length];
+
+for(int i = 0; i < arrayA.length; i++) {
+	arrayAB[i] = arrayA[i];
 }
 
-cetakArray(arrayAngka1, "array1");
-cetakArray(arrayAngka2, "array2");
-cetakArray(hasilArray2, "tes hasil array2");
+for(int i= 0; i<arrayB.length;i++) {
+	arrayAB[i+arrayA.length] = arrayB[i];
+}
+
+cetakArray(arrayA, "A");
+cetakArray(arrayB, "B");
+cetakArray(arrayAB, "gabunganAB");
+
 
 System.out.println("\n\n");
 //sorting reverse, mengurutkan tapi kebalik

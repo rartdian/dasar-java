@@ -19,6 +19,18 @@ cetakArray2D(array_2D);
 int[][] arrayAngka = new int[5][4];
 cetakArray2D(arrayAngka);
 
+//looping lengkap dengan cara manual
+
+for(int i = 0; i< array_2D.length; i++) {
+	System.out.print("[");
+	for(int j = 0; j < array_2D[i].length;j++) {
+		System.out.print(array_2D[i][j]+",");
+	
+	}
+	System.out.print("]\n");
+}
+
+
 	}
 	
 	public static void cetakArray2D(int[][] dataArray) {

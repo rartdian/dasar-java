@@ -40,7 +40,8 @@ for(int[]baris:arrayAngka) {
 	}
 	System.out.print("]\n");
 }
-
+System.out.println("\n Cetak Array 2D dengan library Arrays.deepToString");
+cetakArraydeepToString(array_2D);
 	}
 	
 	public static void cetakArray2D(int[][] dataArray) {
@@ -53,6 +54,10 @@ for(int[]baris:arrayAngka) {
 			System.out.print("}\n");
 		}
 		System.out.print("}\n");
+	}
+	
+	public static void cetakArraydeepToString(int[][] dataArray) {
+		System.out.println(Arrays.deepToString(dataArray));
 	}
 
 }

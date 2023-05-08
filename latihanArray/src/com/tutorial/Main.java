@@ -32,8 +32,8 @@ for(int i=0;i<x;i++) {
 	hasilArray[i] = arrayAngka1[i]+arrayAngka2[i];
 }
 
-
 cetakArray(hasilArray, "hasil penjumlahan\n");
+
 
 //menggabungkan dua buat array
 int[] arrayA = {3,4,5,6,7};

@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author amanah
+ *
+ */
+module ArrayMultidimensi {
+}

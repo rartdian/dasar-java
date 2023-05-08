@@ -12,7 +12,12 @@ int[][] array_2D = {
 		{1,2},{3,4}
 };
 
+cetakArray2D(array_2D);
 
+// cara membuat array 2 dimensi dengan deklarasi
+// int [baris][kolom]
+int[][] arrayAngka = new int[5][4];
+cetakArray2D(arrayAngka);
 
 	}
 	

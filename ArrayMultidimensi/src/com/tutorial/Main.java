@@ -40,12 +40,24 @@ for(int[]baris:arrayAngka) {
 	}
 	System.out.print("]\n");
 }
+
 System.out.println("\n Cetak Array 2D dengan library Arrays.deepToString");
 cetakArraydeepToString(array_2D);
+	
+	
+	System.out.println("\n");
+	int[][] array2D_tes = {
+			{1,2,3,4,5},
+			{6,7,8},
+			{9,10}
+	};
+	
+	cetakArray2D(array2D_tes);
+	
 	}
 	
 	public static void cetakArray2D(int[][] dataArray) {
-		System.out.print("\n");
+		System.out.print("{\n");
 		for(int[] baris: dataArray) {
 			System.out.print("{");
 			for(int angka : baris) {

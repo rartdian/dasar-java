@@ -39,7 +39,7 @@ public class Main {
 		int baris_2 = matrix_2.length;
 		int kolom_2 = matrix_2[0].length;
 		
-		int[][] hasil = new int [baris_1][kolom_1];
+		int[][] hasil = new int [baris_1][kolom_1]; //hasil adalah sejumlah array kosong dengan jumlah baris nya a dan kolom a
 		if (baris_1 == baris_2 && kolom_1 == kolom_2) {
 			for(int i = 0; i< baris_1; i++) {
 				for(int j = 0; j< kolom_1;j++) {
@@ -54,6 +54,8 @@ public class Main {
 	
 	
 	}
+	
+	
 	
 	public static void cetakArray(int[][] dataArray) {
 		int baris = dataArray.length;

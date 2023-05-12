@@ -29,8 +29,44 @@ public class Main {
 		int[][] hasil_tambah = tambah(matrix_a, matrix_b);
 		System.out.println("\n");
 		cetakArray(hasil_tambah);
+	
+		//Perkalian Matrix
+		int[][] matrix_c = {
+				{1,2},
+				{3,4}
+		};
+		int[][] matrix_d = {
+				{5,6},
+				{7,8}
+		};
 		
+		int[][] hasil_perkalian = perkalian(matrix_c, matrix_d);
+		System.out.println("\n Perkalian Matrix");
+		cetakArray(hasil_perkalian);
 	}
+	private static int[][] perkalian(int[][] matrix_1, int[][] matrix_2){
+		int baris_1 = matrix_1.length;
+		int kolom_1 = matrix_1[0].length;
+		
+		int baris_2 = matrix_2.length;
+		int kolom_2 = matrix_2[0].length;
+		
+		//jika a . b jumlah baris akan mengikuti matrix a, kolom akan mengikuti kolom b
+		
+		int[][] hasil = new int[baris_1][kolom_2];//?????
+	int buffer;
+	for(int i = 0; i< baris_1; i++) {
+		for(int j = 0; j < kolom_2; j++) {
+			buffer = 0;
+			for (int k = 0; k < kolom_1; k++) {
+				buffer += matrix_1[i][k] * matrix_2[k][j];
+			}
+			hasil[i][j] = buffer;
+		}
+	}
+	return hasil;
+	}
+	
 	
 	private static int[][] tambah(int[][] matrix_1, int[][] matrix_2){
 		int baris_1 = matrix_1.length;
@@ -39,7 +75,7 @@ public class Main {
 		int baris_2 = matrix_2.length;
 		int kolom_2 = matrix_2[0].length;
 		
-		int[][] hasil = new int [baris_1][kolom_1]; //hasil adalah sejumlah array kosong dengan jumlah baris nya a dan kolom a
+		int[][] hasil = new int [baris_1][kolom_1]; //hasil adalah sejumlah array kosong dengan jumlah baris nya x dan kolom x
 		if (baris_1 == baris_2 && kolom_1 == kolom_2) {
 			for(int i = 0; i< baris_1; i++) {
 				for(int j = 0; j< kolom_1;j++) {

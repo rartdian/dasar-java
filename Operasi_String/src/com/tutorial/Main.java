@@ -10,7 +10,14 @@ public class Main {
 		
 		
 		//substring mengambil kata
-		String kata = kalimat.substring(5,9) ;
+		String kata = kalimat.substring(5,9) ;//disimpan di memory heap
+		System.out.println(kata);
+	
+		//menggabungkan dua buah string, concatenation
+		String kalimat2 = kata + " juice";
+		System.out.println(kalimat2);
+		
+		kata = kata + " minum"; //simpan di memory string pool
 		System.out.println(kata);
 	}
 

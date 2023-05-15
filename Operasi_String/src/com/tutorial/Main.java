@@ -9,6 +9,9 @@ public class Main {
 		System.out.println(kalimat.charAt(9));
 		
 		
+		//substring mengambil kata
+		String kata = kalimat.substring(5,9) ;
+		System.out.println(kata);
 	}
 
 }

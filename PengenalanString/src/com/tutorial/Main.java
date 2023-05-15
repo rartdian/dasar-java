@@ -1,6 +1,10 @@
 package com.tutorial;
 import java.util.Arrays;
 
+//tipe data fundamental, int, double, float, boolean, char
+//string -> tipe data high level= karena bisa melakukan operasi method khususs
+//jika char pakai petik satu ' ,  jika string pakaki oetik dua "
+
 public class Main {
 
 	public static void main(String[] args) {

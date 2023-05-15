@@ -30,7 +30,12 @@ public class Main {
 		System.out.println(kalimat.toUpperCase());
 		System.out.println(kalimat.toLowerCase());
 		
-	
+		
+		//setiap membuat string baru maka disimpan dalam memory yg baru.
+//		merubah kata
+		String kalimat4 = kalimat.replace("Pisang", "Melon");
+	System.out.println(kalimat);
+	System.out.println(kalimat4);
 	}
 
 }

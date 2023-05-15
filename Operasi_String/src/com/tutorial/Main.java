@@ -4,7 +4,7 @@ import java.lang.String;
 public class Main {
 
 	public static void main(String[] args) {
-		String kalimat  = "saya suka makan pisang";
+		String kalimat  = "Saya Suka Makan Pisang";
 		//mengambil komponen dari String
 		System.out.println(kalimat.charAt(9));
 		
@@ -25,6 +25,12 @@ public class Main {
 		String kalimat3 = kata + " " + nilai; //auto dirubah nilai menjadi string atau casting dari int menjadi string
 		System.out.println(kalimat3);
 		System.out.println(kata + " "+nilai ); // casting juga ,dirubah ke string lalu di print, karena print hanya bisa untuk string aja.
+		
+//		membuat kalimat menjadi kapital UPPercase
+		System.out.println(kalimat.toUpperCase());
+		System.out.println(kalimat.toLowerCase());
+		
+	
 	}
 
 }

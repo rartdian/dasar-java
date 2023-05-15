@@ -24,6 +24,7 @@ public class Main {
 		int nilai = 100;
 		String kalimat3 = kata + " " + nilai; //auto dirubah nilai menjadi string atau casting dari int menjadi string
 		System.out.println(kalimat3);
+		System.out.println(kata + " "+nilai ); // casting juga ,dirubah ke string lalu di print, karena print hanya bisa untuk string aja.
 	}
 
 }

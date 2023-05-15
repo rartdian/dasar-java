@@ -19,6 +19,11 @@ public class Main {
 		
 		kata = kata + " minum"; //simpan di memory string pool
 		System.out.println(kata);
+		
+		//concat dengan non String
+		int nilai = 100;
+		String kalimat3 = kata + " " + nilai; //auto dirubah nilai menjadi string atau casting dari int menjadi string
+		System.out.println(kalimat3);
 	}
 
 }

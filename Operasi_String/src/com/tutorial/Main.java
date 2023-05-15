@@ -4,8 +4,11 @@ import java.lang.String;
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		String kalimat  = "saya suka makan pisang";
+		//mengambil komponen dari String
+		System.out.println(kalimat.charAt(9));
+		
+		
 	}
 
 }

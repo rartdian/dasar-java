@@ -36,6 +36,41 @@ public class Main {
 		String kalimat4 = kalimat.replace("Pisang", "Melon");
 	System.out.println(kalimat);
 	System.out.println(kalimat4);
+	
+	//cek persamaaan dua buah string
+//	string itu yg di cek adalah address nya
+	String input = new String("coba"); // hasil akan tidak sama, karena yg di cek pada String adalah Address nya bukan isinya
+	// sehingga dg string mempunyai satu buah method untuk cek isinya bukan Addressnya
+//	jika string mengambil dari user maka memory berada pada heap, bukan literal atau string pool 
+	String input2 = "coba";
+	
+	System.out.println("\ncek Address String");
+	if( input == input2) {
+		System.out.println("sama");
+	}else {
+		System.out.println("tidak sama");
+	}
+	
+	Scanner userInput = new Scanner(System.in);
+	System.out.print("mengambil input String dari User");
+	input = userInput.next(); //disimpan tidak di string pool
+	System.out.println("ini adalah input dari user: "+input);
+	
+	if(input == input2) {
+		System.out.println("sama");
+	} else {
+		System.out.println("tidak sama");
+	} 
+	//hasil dari user akan tidak sama karena String dari user masuk di heap, tidak di string pool
+	//sehingga untuk cek isi pada string dengan equals
+	System.out.println("cek dengan lib equals");
+	if(input.equals(input2)) {
+		System.out.println("sama");
+	}else {
+		System.out.println("tidak sama");
+		
+	}
+	
 	}
 
 }

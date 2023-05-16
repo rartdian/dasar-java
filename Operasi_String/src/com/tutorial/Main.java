@@ -4,6 +4,13 @@ import java.lang.String;
 public class Main {
 
 	public static void main(String[] args) {
+		//COmpare, membandingkan
+		String nama1 = "rio";
+		String nama2 = "lisa";
+		System.out.println(nama1.compareTo(nama2)); //hasilnya rio 6 langkah dari lisa, jarak antara alpabet nya
+//abcdefghijk l,m,n,o,p,q, =6, r stuvwxyz
+		
+		
 		String kalimat  = "Saya Suka Makan Pisang";
 		//mengambil komponen dari String
 		System.out.println(kalimat.charAt(9));
@@ -70,6 +77,8 @@ public class Main {
 		System.out.println("tidak sama");
 		
 	}
+	
+	
 	
 	}
 

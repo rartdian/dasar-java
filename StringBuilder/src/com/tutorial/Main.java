@@ -15,7 +15,14 @@ public class Main {
 		
 		CetakData(builder);
 		
-	
+		//insert, menambahkan kata pada kalimat di memory yg sama sesuai kapasitas panjang memory
+		builder.insert(11, " kelurahan");
+		CetakData(builder);
+		
+		
+		//delete string di alamat yg sama
+		builder.delete(12, 22);
+		CetakData(builder);
 	}
 	
 	

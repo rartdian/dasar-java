@@ -9,7 +9,13 @@ public class Main {
 		//StringBuilder memiliki capacity	
 
 		
-		//jika concat membuat memory baru
+		//jika concat membuat memory baru jika append tidak
+		//operasi string untuk menambahkan kata atau kalimat tidak menambah di memory dengan append
+		builder.append(" warga medono");
+		
+		CetakData(builder);
+		
+	
 	}
 	
 	
@@ -19,7 +25,7 @@ public class Main {
 		System.out.println("kapasitas = "+ dataBuilder.capacity());
 		
 		int addressBuilder = System.identityHashCode(dataBuilder);
-		System.out.println("Address = "+Integer.toHexString(addressBuilder));
+		System.out.println("Address = "+Integer.toHexString(addressBuilder)+"\n");
 	}
 
 }

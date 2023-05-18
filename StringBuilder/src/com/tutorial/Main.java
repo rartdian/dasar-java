@@ -16,13 +16,22 @@ public class Main {
 		CetakData(builder);
 		
 		//insert, menambahkan kata pada kalimat di memory yg sama sesuai kapasitas panjang memory
-		builder.insert(11, " kelurahan");
-		CetakData(builder);
+		builder.insert(11, " kelurahan"); //menambahkan pada index alphabet ke 11
+		CetakData(builder); //
 		
 		
 		//delete string di alamat yg sama
 		builder.delete(12, 22);
 		CetakData(builder);
+		
+		//merubah Alphabet pada index tertentu
+		builder.setCharAt(0, 'H');
+		builder.setCharAt(6, 'W');
+		CetakData(builder);
+		
+//		replace
+		builder.replace(12, 18, "podosugih");
+		System.out.println(builder);
 	}
 	
 	

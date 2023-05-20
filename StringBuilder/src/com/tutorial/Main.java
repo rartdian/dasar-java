@@ -31,7 +31,14 @@ public class Main {
 		
 //		replace
 		builder.replace(12, 18, "podosugih");
-		System.out.println(builder);
+		System.out.println(builder+"\n");
+		
+		
+		//casting menjadi String
+		String kalimat = builder.toString();
+		System.out.println(kalimat);
+		int addresString = System.identityHashCode(kalimat);
+		System.out.println("address "+Integer.toHexString(addresString)); //selanjutnya bisa melakukan equality dsb ?
 	}
 	
 	

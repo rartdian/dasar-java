@@ -31,6 +31,22 @@ public class Main {
 	System.out.printf("%d - %d = %+d\n",int1, int2, hasil);
 	
 	//[width]
+	System.out.println("\nWidth");
+	int int3 = 1000;
+	System.out.println("Integer");
+	System.out.printf("%d\n ",int3);
+	System.out.printf("%5d\n", int3);
+	System.out.printf("%-5d\n", int3); //flags = "-", artinya rata kiri
+	System.out.printf("%+5d\n",int3); //flags akan mengambil slot di dalam format
+	System.out.printf("%+-6d\n",int3); //flags bisa digabungkan
+	System.out.printf("%10d\n",int3);
+	System.out.printf("% 10d\n",int3);
+	System.out.printf("%010d\n",int3); //flags = "0",kita tambahkan leading "0" didepan
+	System.out.printf("%+010d\n",int3);
+	int int4 = 1000000;
+	System.out.printf("%-,1d\n",int4);//flags = "0", menandakan delimeter per seribu
+	
+
 	
 	}
 

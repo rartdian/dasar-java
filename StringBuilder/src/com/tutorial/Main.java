@@ -3,10 +3,12 @@ import java.lang.StringBuilder;
 public class Main {
 
 	public static void main(String[] args) {
+		
+		//jika mau membuat kalimat dengan string lebih mudah maka gunakan string builder
 		StringBuilder builder = new StringBuilder("hallo");
 		CetakData(builder);
 		
-		//StringBuilder memiliki capacity	
+		//StringBuilder memiliki capacity, berbeda dg string yghanya memiliki length	
 
 		
 		//jika concat membuat memory baru jika append tidak

@@ -1,5 +1,7 @@
 package com.tutorial;
 
+import java.util.Formatter;
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -46,7 +48,46 @@ public class Main {
 	int int4 = 1000000;
 	System.out.printf("%-,1d\n",int4);//flags = "0", menandakan delimeter per seribu
 	
-
+	System.out.println("\nFloating point");
+	float float1 = 1.542f;
+	System.out.printf("%f\n",float1);
+	System.out.printf("%+9f\n", float1); //floating point akan mengambil width dengan 6 decimal
+	
+	//[.precision]
+	
+	System.out.println("\n [.precision]");
+	float float2 = 15.678f;
+	System.out.printf("%f\n", float2);
+	System.out.printf("%.1f\n", float2);
+	System.out.printf("%2f\n", float2);
+	System.out.printf("%8.2f\n", float2); //gabungkan dengan width
+	System.out.printf("%+08.2f\n", float2); //gabungakn dengan width dan flag
+	
+//	contoh
+	String nama2 = "Rio";
+	float IPK = 3.78532112113f;
+	
+	//struktur format = %[argumen_index$][flags][width][.precision]conversion
+	
+	System.out.printf("\nIPK %1$s berapa?, \n%1$s: saya dapet %2$+5.2f\n",nama,IPK);
+	
+	//Kesimpulan
+	
+	//save format ini kedalam variabel string
+	String info_biasa = "nama: " + nama2 + ", IPK = " + IPK;
+	System.out.println("biasa -> "+info_biasa);
+	
+	String info_format = String.format("nama: %s, IPK = %2$+5.2f",nama2, IPK);
+	System.out.println("string format -> "+ info_format);
+	
+	//save format ini kedalam string builder
+	
+	StringBuilder builder_info = new StringBuilder();
+	Formatter formatBuilder = new Formatter(builder_info);
+	
+	formatBuilder.format("nama: %s, IPK = %2$+5.2f",nama2, IPK);
+	System.out.println("String builder format -> "+builder_info);
+			
 	
 	}
 

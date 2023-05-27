@@ -41,6 +41,11 @@ public class konversi {
 		System.out.printf("%d / %d = %f", x, y, z);
 		
 		
+	double inidouble = 5;
+	double inidouble2 = 2;
+	float iniFloat = (float)((float)inidouble/inidouble2);
+	
+	System.out.println("\nini float = "+iniFloat);
 	}
 
 }

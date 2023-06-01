@@ -32,7 +32,7 @@ public class Main {
 	//contoh
 	int b = 10;
 	b*= 5;
-	System.out.println("nilai b = 10 dikali samadegnan 5 = "+b+"\n");
+	System.out.println("nilai b = 10 dikali samadegnan 5 = "+b+"\n");// b = 10 dikali 5 disimpan var b
 	
 	int c = 10;
 	c/=2;
@@ -42,6 +42,13 @@ public class Main {
 	int z = 25;
 	z %= 6;
 	System.out.println("nilai z = 25 di bagi samadengan 6 maka sisa hasil bagi adlaha="+z+"\n");
+	
+int nilai = 5;
+nilai--;
+nilai++;
+nilai = nilai - 4;
+nilai = nilai + 1;
+System.out.println("hasil : "+nilai);
 	
 	}
 

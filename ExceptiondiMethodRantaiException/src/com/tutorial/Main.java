@@ -24,11 +24,26 @@ public class Main {
 		int data = mengambilDariArray(arrayData,indexInput);
 		System.out.printf("data dari array ke-> %d adalah %d\n\n", indexInput, data);
 		
-		System.out.println("\nakhir program");
 		
+		
+		//tipe lain dari exception
+		//exception throws by method
+		System.out.println("Exception throws by method");
+		int datakedua = 0;
+		try {
+			datakedua = ambilData(arrayData,indexInput);
+		} catch (Exception e) {
+			System.err.println(e);
 		}
+		System.out.printf("data dari array ke-%d adalah %d\n\n", indexInput, datakedua);
+		
+		//System.out.println("\n\nakhir program");
+	}
 	
-	
+	private static int ambilData(int[] array, int index) throws Exception{
+		int hasil = array[index];
+		return hasil;
+	}
 	
 	private static int mengambilDariArray(int[] array, int index) {
 		int hasil = 0;

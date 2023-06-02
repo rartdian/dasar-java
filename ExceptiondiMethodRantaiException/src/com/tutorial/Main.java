@@ -2,6 +2,8 @@ package com.tutorial;
 import java.util.Scanner;
 public class Main {
 
+	
+	//chaining atau merantaikan exception
 	public static void main(String[] args) {
 		int[] arrayData = {0,1,2,3};
 		Scanner userInput = new Scanner(System.in);
@@ -17,8 +19,27 @@ public class Main {
 			System.err.println(e);
 		}
 		
+		//Exception di dalam fungsi
+		System.out.println("\n\nException didalam fungsi");
+		int data = mengambilDariArray(arrayData,indexInput);
+		System.out.printf("data dari array ke-> %d adalah %d\n\n", indexInput, data);
 		
 		System.out.println("\nakhir program");
+		
+		}
+	
+	
+	
+	private static int mengambilDariArray(int[] array, int index) {
+		int hasil = 0;
+		
+		try {
+			hasil = array[index];
+			
+		} catch (Exception e) {
+			System.err.println(e);
+		}
+		return hasil;
 	}
 
 }

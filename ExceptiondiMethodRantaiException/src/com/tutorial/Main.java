@@ -37,7 +37,7 @@ public class Main {
 		}
 		System.out.printf("data dari array ke-%d adalah %d\n\n", indexInput, datakedua);
 		
-		//System.out.println("\n\nakhir program");
+		System.out.println("\n\nakhir program");
 	}
 	
 	private static int ambilData(int[] array, int index) throws Exception{

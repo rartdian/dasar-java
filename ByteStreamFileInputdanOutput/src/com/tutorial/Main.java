@@ -17,7 +17,7 @@ public class Main {
 		int data = fileInput.read();
 		
 		while(data != -1) {
-			System.out.println((char)data);
+			System.out.println((char)data); //disebut byte stream karena membaca file perbyte character, nilai char=8bit dan juga byte juga sama 8 bit
 			data = fileInput.read();
 		}
 		//Menutup File
@@ -35,11 +35,13 @@ public class Main {
 				
 				while(buffer != -1) {
 					fileOutput.write(buffer);
-					buffer = fileInput.read();
-					
+					buffer = fileInput.read();		
 				}
 				
 			}finally {
+				if(fileInput != null) {
+					fileInput.close();
+				}
 				if(fileOutput != null) {
 					fileInput.close();
 				}
@@ -55,7 +57,7 @@ public class Main {
 //				Membaca file
 				int data2 = in.read();
 				
-				while(data2!= -1) {
+				while(data2 != -1) {
 					out.write((char)data2);
 					data2 = in.read();
 				}

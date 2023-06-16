@@ -1,3 +1,0 @@
-hallo teman teman,
-ini contoh dari byte stream
-input text

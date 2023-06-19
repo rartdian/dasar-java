@@ -50,6 +50,8 @@ public class Main {
 	byteFileOutput.close();
 	charFileOutput.close();
 	
+	//byte stream dan char stream file tidak diolah di memory (unbuffered I/O)
+	
 	}
 
 }

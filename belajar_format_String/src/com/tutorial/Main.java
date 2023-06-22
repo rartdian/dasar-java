@@ -17,6 +17,7 @@ public class Main {
 	// conversion : f=floating point, d=integer, c= character, s=string, b=boolean
 	// struktur format = %[argumen_index$][flags][width][.precision]conversion
 	
+
 	//[argumen_index$]
 	System.out.println("\n[argumen_index$]");
 	
